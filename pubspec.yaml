@@ -1,0 +1,10 @@
+name: amcharts4
+description: Dart wrapper for the AmCharts 4 JS library.
+version: 0.0.1
+author: Monty Rasmussen <monty@vutiliti.com>
+
+environment:
+  sdk: '>=2.0.0-dev.68.0 <2.0.0'
+
+dependencies:
+  js: ^0.6.1
