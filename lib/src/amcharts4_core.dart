@@ -28,6 +28,8 @@ class Component extends Container {
 
   external List get data;
   external set data(List v);
+
+  external void invalidateRawData();
 }
 
 @JS('Container')

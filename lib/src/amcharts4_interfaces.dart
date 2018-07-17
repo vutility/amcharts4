@@ -1,4 +1,4 @@
-@JS('AmCharts4Interfaces')
+@JS()
 library amcharts4.interfaces;
 
 import 'package:js/js.dart';
@@ -7,12 +7,6 @@ import 'package:js/js.dart';
 @anonymous
 class IChartDataFields extends IComponentDataFields {
   external factory IChartDataFields();
-}
-
-@JS()
-@anonymous
-class ISerialChartDataFields extends IChartDataFields {
-  external factory ISerialChartDataFields();
 }
 
 @JS()
@@ -26,7 +20,13 @@ class IComponentDataFields {
 
 @JS()
 @anonymous
-class ITreeMapDataFields {
+class ISerialChartDataFields extends IChartDataFields {
+  external factory ISerialChartDataFields();
+}
+
+@JS()
+@anonymous
+class ITreeMapDataFields extends IXYChartDataFields {
   external factory ITreeMapDataFields();
 
   external String get children;

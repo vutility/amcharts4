@@ -32,6 +32,8 @@ class LabelBullet extends Bullet {
 @JS('SerialChart')
 class SerialChart extends Chart {
   external factory SerialChart();
+
+  external void dispose();
 }
 
 @JS('Series')
