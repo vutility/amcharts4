@@ -71,6 +71,9 @@ class AmChartsList {
 @JS('ListTemplate')
 class ListTemplate extends AmChartsList {
   external factory ListTemplate();
+
+  external get template;
+  external set template(v);
 }
 
 @JS('Sprite')
@@ -79,6 +82,18 @@ class Sprite extends BaseObjectEvents {
 
   external Color get fill;
   external set fill(Color v);
+
+  external Color get stroke;
+  external set stroke(Color v);
+
+  external num get strokeWidth;
+  external set strokeWidth(num v);
+
+  external String get tooltipHTML;
+  external set tooltipHTML(String v);
+
+  external String get tooltipText;
+  external set tooltipText(String v);
 
   external Sprite margin(num top, num right, num bottom, num left);
   external Sprite padding(num top, num right, num bottom, num left);

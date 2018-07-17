@@ -21,6 +21,22 @@ class Chart extends Component {
   external factory Chart();
 }
 
+@JS('Column')
+class Column extends Container {
+  external factory Column();
+
+  external ListTemplate get columns ;
+  external set columns (ListTemplate v);
+}
+
+@JS('ColumnSeries')
+class ColumnSeries extends XYSeries {
+  external factory ColumnSeries();
+
+  external ListTemplate get columns ;
+  external set columns (ListTemplate v);
+}
+
 @JS('LabelBullet')
 class LabelBullet extends Bullet {
   external factory LabelBullet();
@@ -55,8 +71,17 @@ class TreeMap extends XYChart {
   external set seriesTemplates(DictionaryTemplate v);
 }
 
+@JS('TreeMapSeries')
+class TreeMapSeries extends ColumnSeries {
+  external factory TreeMapSeries();
+}
+
 @JS('XYChart')
 class XYChart extends SerialChart {
   external factory XYChart();
 }
 
+@JS('XYSeries')
+class XYSeries extends Series {
+  external factory XYSeries();
+}
