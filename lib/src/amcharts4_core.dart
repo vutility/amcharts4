@@ -35,6 +35,9 @@ class Component extends Container {
 @JS('Container')
 class Container extends Sprite {
   external factory Container();
+
+  external get fontSize;
+  external set fontSize(v);
 }
 
 @JS('Dictionary')
@@ -76,6 +79,9 @@ class Sprite extends BaseObjectEvents {
 
   external Color get fill;
   external set fill(Color v);
+
+  external Sprite margin(num top, num right, num bottom, num left);
+  external Sprite padding(num top, num right, num bottom, num left);
 }
 
 @JS('color')
